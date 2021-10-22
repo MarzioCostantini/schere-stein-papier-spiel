@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Schere, <span class="steinn"></span>Stein,
+        <span class="Papier">Papier</span>
+      </h1>
+      <section class="select-rounds">
+        <div class="rounds">
+          <img
+            class="closebutton"
+            src="assets/img/times-solid.svg"
+            alt="Close"
+          />
+          <h3 class="result-popup"></h3>
+          <h3 class="runden-spielen">Wieviel runden möchtest du spielen?</h3>
+          <form>
+            <input class="round" value="5" type="radio" name="value2" checked />
+            <label>5</label>
+            <input class="round" value="10" type="radio" name="value2" />
+            <label>10</label>
+            <input class="round" value="15" type="radio" name="value2" />
+            <label>15</label>
+            <input class="round" value="20" type="radio" name="value2" />
+            <label>20</label>
+          </form>
+          <a class="spiel-button" href="#">Spielen</a>
+        </div>
+        <div class="overlay"></div>
+      </section>
+    </header>
+    <main>
+      <section class="score">
+        <div class="result-you">
+          <h2 class="your-points">0</h2>
+        </div>
+        <h2 class="colon">:</h2>
+        <div class="result-computer">
+          <h2 class="computer-points">0</h2>
+        </div>
+      </section>
+      <h2 class="win-or-lose">Ergebniss</h2>
+      <section class="hands">
+        <article>
+          <img class="meine-hand" src="assets/img/rock.png" alt="" />
+        </article>
+        <div class="line"></div>
+        <article>
+          <img class="computer-hand" src="assets/img/rock.png" alt="" />
+        </article>
+      </section>
+      <section class="you-computer-text">
+        <h3>Du</h3>
+        <h3>Computer</h3>
+      </section>
+      <div class="button-Ver-Res">
+        <button>Vergleichen</button>
+        <button class="reset">Reset</button>
+      </div>
+      <section class="buttons">
+        <div>
+          <img class="schere" src="assets/img/scissors.png" alt="Schere Bild" />
+        </div>
+        <div>
+          <img class="stein" src="assets/img/rock.png" alt="Stein Bild" />
+        </div>
+        <div>
+          <img class="papier" src="assets/img/paper.png" alt="Papier Bild" />
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
